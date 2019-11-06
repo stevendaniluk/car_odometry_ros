@@ -51,9 +51,9 @@ CarOdometryRos::CarOdometryRos(const ros::NodeHandle& nh, const CarOdometryRosPa
     ROS_INFO("Car odometry initialized");
 }
 
-void CarOdometryRos::updateState(const EncoderPulses& pulses, double delta_FL, double delta_FR,
-                                 const ros::Time& time) {
-    CarOdometry::updateState(pulses, delta_FL, delta_FR, time.toSec());
+void CarOdometryRos::updateAbsolute(const EncoderPulses& pulses, double delta_FL, double delta_FR,
+                                    const ros::Time& time) {
+    CarOdometry::updateAbsolute(pulses, delta_FL, delta_FR, time.toSec());
 }
 
 void CarOdometryRos::broadcast() {

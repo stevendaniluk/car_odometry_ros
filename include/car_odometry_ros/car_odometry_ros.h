@@ -37,9 +37,9 @@ class CarOdometryRos : public CarOdometry {
     // @node_params: Parameters for odometry computation
     CarOdometryRos(const ros::NodeHandle& nh, const CarOdometryRosParameters& params);
 
-    // Version of updateState that accepts ROS time
-    void updateState(const EncoderPulses& pulses, double delta_FL, double delta_FR,
-                     const ros::Time& time);
+    // Version of updateAbsolute that accepts ROS time
+    void updateAbsolute(const EncoderPulses& pulses, double delta_FL, double delta_FR,
+                        const ros::Time& time);
 
     // broadcast
     //
