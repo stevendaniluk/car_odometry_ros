@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <name>car_odometry_ros</name>
+  <version>0.0.0</version>
+  <description>TODO</description>
+
+  <maintainer email="stevendaniluk8@gmail.com">Steven Daniluk</maintainer>
+  <author email="stevendaniluk8@gmail.com">Steven Daniluk</author>
+  <license>BSD</license>
+
+  <!-- Build Tool Dependencies -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Build Dependencies -->
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>tf2</build_depend>
+  <build_depend>tf2_ros</build_depend>
+
+  <!-- Run Time Dependencies -->
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>tf2</run_depend>
+  <run_depend>tf2_ros</run_depend>
+
+</package>
